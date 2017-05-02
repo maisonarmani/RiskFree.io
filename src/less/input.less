@@ -1,0 +1,29 @@
+.input-text {
+  border: solid 1px grey;
+  padding: 1em;
+  display: inline-block;
+  border-radius: 2px;
+  margin-top: 1.2em;
+  min-width: 25em;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  &:hover{
+    border-color: @theme-3;
+  }
+  &:active, &:focus {
+    border-color: @theme-3;
+  }
+  & textarea{
+    min-height: 10em;
+  }
+  & input, & select , & textarea{
+    border: none;
+    width: 100%;
+    padding: 0 1em;
+    &:active, &:focus {
+      outline: transparent;
+    }
+  }
+
+}

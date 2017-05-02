@@ -1,0 +1,39 @@
+.footer{
+  color:@font-color;
+  min-height: 10em;
+  background-color: lighten(black,20%);
+  display: block;
+  .link-list{
+    margin: 4em 1em;
+    *{
+      list-style: none;
+      color:white;
+      padding: 0;
+    }
+
+    .header{
+      font-size: @font-size-h4;
+    }
+    .item{
+      margin: 1em 0;
+      font-weight: lighter;
+      a{
+        color:darken(white,20%);
+        transition: all 0.4s ease-in-out;
+        &:hover{
+          text-decoration: none;
+          color:darken(white,26%);
+        }
+      }
+    }
+  }
+  .footer-text{
+    text-transform: uppercase;
+    padding: 3em !important;
+    margin: 0;
+  }
+  .extra{
+    color:white;
+    margin-top: 5em;
+  }
+}
